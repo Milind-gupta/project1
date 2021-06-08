@@ -1,5 +1,6 @@
 provider "aws" {
-  profile = "default"
+  profile = "testing"
+  shared_credentials_file = "/home/ubuntu/.aws/credentials"
   region  = "ap-south-1"
 }
 resource "aws_instance" "terraform" {
