@@ -1,5 +1,13 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "3.44.0"
+    }
+  }
+}
 provider "aws" {
-region  = "ap-south-1"
+region = "ap-south-1"
 }
 resource "aws_instance" "terraform" {
 ami           = "ami-04bde106886a53080"
