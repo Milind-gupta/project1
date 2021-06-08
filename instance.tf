@@ -6,7 +6,7 @@ terraform {
     }
   }
 }
-provider "aws" {
+provider "hashicorp/aws" {
 region = "ap-south-1"
 }
 resource "aws_instance" "terraform" {
