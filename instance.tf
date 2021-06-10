@@ -22,7 +22,6 @@ provider "aws" {
     ami = "ami-04bde106886a53080"
     instance_type = "t2.micro"
     key_name = aws_key_pair.project1.key_name
-  }
     provisioner "remote-exec" {
     connection {
     type        = "ssh"
